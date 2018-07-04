@@ -4,6 +4,6 @@
 
 https://www.reddit.com/r/ProgrammerHumor/comments/2wrxyt/a_python_programmer_attempting_java/
 
-usage: python3 formatter.py filename.java -i
+usage: `python3 formatter.py filename.java -i`
 
-Run python3 formatter.py -h for help and some other flags
+Run `python3 formatter.py -h` for help and some other flags
