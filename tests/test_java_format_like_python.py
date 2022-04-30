@@ -7,6 +7,8 @@ from java_format_like_python import Formatter
 def test_format1() -> None:
     correct_output = dedent(
         """
+        import java.util.Random                                                         ;
+
         public class test_file                                                          {
 
             public static void main(String[] args)                                      {
@@ -16,7 +18,7 @@ def test_format1() -> None:
                     System.out.println("Hello World")                                   ;}
 
                 if (true)                                                               {
-                    if(false)                                                           {
+                    if(new Random().nextInt(1) == 0)                                    {
                         System.out.println("Hello World")                               ;}
 
                     else                                                                ;
