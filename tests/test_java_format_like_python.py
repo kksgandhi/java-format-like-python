@@ -4,7 +4,7 @@ from textwrap import dedent
 from java_format_like_python import Formatter
 
 
-def test_format1():
+def test_format1() -> None:
     correct_output = dedent(
         """
         public class test_file                                                          {
@@ -34,7 +34,7 @@ def test_format1():
     assert actural_output == correct_output
 
 
-def test_format2():
+def test_format2() -> None:
     correct_output = dedent(
         """
         public class other_test_file                                                    {
