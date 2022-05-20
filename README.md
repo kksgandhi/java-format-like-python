@@ -9,7 +9,7 @@
 ## Install
 
 ```sh
-pip install https://github.com/kksgandhi/java-format-like-python
+pip install git+https://github.com/kksgandhi/java-format-like-python
 ```
 
 <!-- or, pip install java-format-like-python after being published on pypi -->
