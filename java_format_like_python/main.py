@@ -1,4 +1,5 @@
 import argparse
+import os
 import sys
 
 from . import Formatter, __version__
@@ -60,7 +61,7 @@ def main() -> None:
         sys.exit(1)
 
     #  If not args.inplace then create a new file by appending "_better"
-    outfile_name = args.file[:-5] + "_better.java" if not args.inplace else args.file
+    outfile_name = os.path.splitext(args.file)[0] + "_better.java" if not args.inplace else args.file
 
     #  writing out the file
     print("\n".join(new_lines), file=open(outfile_name, "w"))
