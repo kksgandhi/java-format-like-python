@@ -19,7 +19,7 @@ jobs:
           python-version: "3.9"
 
       - name: Lint with pre-commit
-        uses: pre-commit/action@v2.0.3
+        uses: pre-commit/action@v3.0.0
   test:
     runs-on: ${{ matrix.os }}
     strategy:
